@@ -1,0 +1,126 @@
+#game {
+  position: relative;
+  font-family: 'Roboto Slab';
+}
+
+body {
+  width: 41%;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Roboto Slab';
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-family: helvetica;
+  font-weight: 100;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.board {
+  width: 480px;
+  height: 480px;
+  border-bottom: solid black 3px;
+  border-right: solid black 3px;
+  border-top: solid #eee 3px;
+  border-left: solid #eee 3px;
+}
+
+.tile {
+  width: 20px;
+  height: 20px;
+  background-color: #66CDAA;
+  float: left;
+  border: black solid 2px;
+  border-style: outset;
+  text-align: center;
+  border-bottom-color: gray;
+  border-right-color: gray;
+  border-top-color: #eee;
+  border-left-color: #eee;
+}
+
+.flagged {
+
+}
+
+.bombed {
+  color: red;
+}
+
+.unexplored {
+
+}
+
+.empty {
+  background-color: #eee;
+  border-style: inset;
+  border-bottom-color: #eee;
+  border-right-color: #eee;
+  border-top-color: gray;
+  border-left-color: gray;
+}
+
+.number {
+  background-color: #eee;
+  border-style: inset;
+  border-bottom-color: #eee;
+  border-right-color: #eee;
+  border-top-color: gray;
+  border-left-color: gray;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.is-active {
+  position: absolute;
+  top: 20%;
+  left: 3px;
+  display: inline;
+  width: 480px;
+  height: 240px;
+  background-color: rgba(225, 172, 209, .96);
+}
+
+.modal.is-active::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.modal.is-active h1 {
+  font-size: 68px;
+  font-weight: bold;
+}
+
+.replay {
+  position: absolute;
+  width: 100%;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  color: blue;
+  text-align: center;
+}
+
+.replay:hover {
+  color: black;
+}
+
+/*.modaltran-enter {
+  opacity: 0.01;
+}
+
+.modaltran.modal-transition-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}*/
